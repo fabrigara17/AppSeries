@@ -1,0 +1,112 @@
+:root {
+    --color-primario: yellow;
+    --color-secundario: black;
+    --color-letras: white;
+    --color-hover: rgb(188, 188, 3);
+    --color-letras-2: black;
+    --color-letras-3: yellow;
+    --fuente: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-secundario);
+    color: var(--color-letras);
+    font-family: var(--fuente);
+}
+
+.main {
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-secundario);
+}
+
+.card-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: var(--color-secundario);
+    border: 2px solid var(--color-primario);
+    border-radius: 10px;
+}
+
+.title-form {
+    margin: 0 0 1.5rem;
+    color: var(--color-letras-3);
+    font-size: 1.5rem;
+    font-family: var(--fuente);
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--color-letras-3);
+    font-size: 1rem;
+    font-family: var(--fuente);
+}
+
+.input {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    background-color: var(--color-secundario);
+    color: var(--color-letras);
+    border: 1px solid var(--color-primario);
+    border-radius: 10px;
+    font-family: var(--fuente);
+    font-size: 1rem;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--color-hover);
+    box-shadow: 0 0 8px var(--color-primario);
+}
+
+.button {
+    margin-top: 0.5rem;
+    padding: 0.6rem 1rem;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    border: 2px solid var(--color-primario);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: var(--fuente);
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.button:hover {
+    background-color: var(--color-primario);
+    color: var(--color-letras-2);
+    box-shadow:
+        0 0 5px var(--color-primario),
+        0 0 20px var(--color-primario),
+        0 0 40px var(--color-primario),
+        0 0 80px var(--color-primario);
+}
+
+.button:active {
+    background-color: var(--color-hover);
+}
+
+.link {
+    color: var(--color-letras-3);
+    text-align: center;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--color-hover);
+    text-decoration: underline;
+}
