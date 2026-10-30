@@ -1,0 +1,16 @@
+{
+  "short_name": "nombre_de_tu _app",
+  "name": "Nombre de tu app",
+  "icons": [
+    {
+      "src": "./src/img/icon/logoApp.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#color",
+  "theme_color": "#color",
+  "display": "standalone",
+  "orientation": "portrait"
+}
