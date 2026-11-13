@@ -110,3 +110,30 @@ body {
     color: var(--color-hover);
     text-decoration: underline;
 }
+
+
+select.input,
+textarea.input {
+    font-family: var(--fuente);
+}
+
+textarea.input {
+    resize: vertical;
+}
+
+.input[type="file"] {
+    padding: 0.4rem;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.check input {
+    accent-color: var(--color-primario);
+    width: 1.1rem;
+    height: 1.1rem;
+}
